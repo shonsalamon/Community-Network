@@ -1,4 +1,4 @@
-# community-network
+# Community-network
 
 In complex networks, a network is said to have community structure if the nodes of the
 network can be grouped into groups of nodes with dense connections internally, and sparser
@@ -25,7 +25,7 @@ a random graph with the same degrees
 ![alt tag](https://github.com/shonsalamon/community-network/blob/main/Images/Q%20definition.JPG)
 
 
-# project's goal 
+# Project's goal 
 Our goal in this project is thus to find a division that maximizes the modularity, that
 is, a division of the graph into groups such that the modularity Q, the sum of all group
 modularities, is close to maximal.
@@ -46,5 +46,10 @@ of the nodes in the group, in increasing order.
 The next value is the number of nodes in the second group, followed by the indices of the
 nodes in group, then the number of nodes and indices of nodes in the third group, and so
 on until the last group.
-
-
+# Executing the Project
+The makefile compiles all relevant parts of the code and creates an executable file named "cluster". The code will be executed by running the "make all" command in a UNIX terminal. The file "cluster" receives two command-line arguments. The 1st is an input filename, and the 2nd is an
+output filename. The input of the program is a network (a graph), and the output is a list
+of groups (the division).
+>./cluster input_file_name output_file_name
+## Output example  
+![alt tag](https://github.com/shonsalamon/community-network/blob/main/Images/graph_example.png)
